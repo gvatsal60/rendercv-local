@@ -56,7 +56,6 @@ yarn-error.log
 *.pyo
 __pycache__/
 .venv/
-uv.lock
 
 # Java
 *.class
@@ -115,3 +114,6 @@ lib/
 dist/
 bower_components/
 *.min.js
+
+# RenderCV Output
+**/rendercv_output/

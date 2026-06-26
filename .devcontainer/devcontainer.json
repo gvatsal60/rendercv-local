@@ -13,16 +13,12 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "DavidAnson.vscode-markdownlint",
-        "Tyriar.sort-lines",
-        "bradzacher.vscode-copy-filename",
+        "analytic-signal.preview-pdf",
+        "astral-sh.ty",
         "charliermarsh.ruff",
-        "docker.docker",
         "ms-azuretools.vscode-containers",
-        "ms-python.isort",
-        "ms-python.pylint",
         "ms-python.python",
-        "ms-python.vscode-pylance",
+        "redhat.vscode-yaml",
         "streetsidesoftware.code-spell-checker",
         "usernamehw.errorlens"
       ],
