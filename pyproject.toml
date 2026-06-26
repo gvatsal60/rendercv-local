@@ -1,8 +1,10 @@
 [project]
-name = "genai-starter-kit"
+name = "rendercv-local"
 version = "0.0.1"
-description = "⚡️ Fast-track your GenAI app development"
+description = "Automated local CV rendering pipeline using RenderCV"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "rendercv[full]>=2.8",
+    "rust-just>=1.54.0",
 ]
