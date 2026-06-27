@@ -1,67 +1,76 @@
----
-title: GenAI Starter Kit
-sdk: docker
-python_version: 3.13
-app_port: 8501
-short_description: A lightweight, plug-and-play template for building generative AI apps with ease.
-license: apache-2.0
----
+# RenderCV Local
 
-<!-- markdownlint-disable MD025 -->
-# ⚡️ GenAI Starter Kit
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/gvatsal60/GenAIStarterKit/blob/HEAD/LICENSE)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gvatsal60_GenAIStarterKit&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=gvatsal60_GenAIStarterKit)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/gvatsal60/GenAIStarterKit/master.svg)](https://results.pre-commit.ci/latest/github/gvatsal60/GenAIStarterKit/HEAD)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8eaddb15db414c6d8508d09edf485629)](https://app.codacy.com/gh/gvatsal60/GenAIStarterKit/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-[![CodeFactor](https://www.codefactor.io/repository/github/gvatsal60/genaistarterkit/badge)](https://www.codefactor.io/repository/github/gvatsal60/genaistarterkit)
+Generate professional, beautifully formatted CVs from **YAML** configuration files. Version control your resume, iterate with live preview, export to PDF and Markdown.
 
-Welcome to the **GenAI Starter Kit**! This template helps you kickstart your Generative AI application development with a modern, Python-based stack.
+## ⚡ Quick Start
 
-## 🚀 Features
+### 🐳 Using Dev Container (1 min setup)
 
-- Minimal, ready-to-extend project structure
-- Python 3.13+ support
-- Pre-configured for best practices (linting, formatting, CI)
-- Easy dependency management with `pyproject.toml`
-- Example documentation and contribution guidelines
-
-## 🛠️ Quick Start
-
-1. **Clone the repository:**
-
-   ```sh
-   git clone https://github.com/gvatsal60/GenAIStarterKit.git
-   cd GenAIStarterKit
-   ```
-
-2. **Set up your environment:**
-
-   ```sh
-   python3.13 -m venv .venv
-   source .venv/bin/activate
-   pip install -e .
-   ```
-
-3. **Start building your GenAI app!**
-
-## 📦 Project Structure
-
-```tree
-genai-starter-kit/
-├── src/                  # Your source code
-├── tests/                # Unit tests
-├── README.md
-├── pyproject.toml
-├── .gitignore
-├── LICENSE
-└── ...
+```bash
+git clone https://github.com/gvatsal60/rendercv-local.git
+cd rendercv-local
+code .
 ```
+
+→ Click **"Reopen in Container"** when prompted → Done! ✅
+
+### 📦 Local Setup
+
+```bash
+git clone https://github.com/gvatsal60/rendercv-local.git
+cd rendercv-local
+pip install -e .
+```
+
+## 🚀 Build Commands
+
+```bash
+just           # Clean, sync, and build
+just build     # Render your CV
+just watch     # Live preview (auto-reload on save)
+just --list    # See all commands
+```
+
+Output: **PDF** + **Markdown** files in current directory
+
+## 📁 File Structure
+
+```text
+src/
+├── resume.yaml    # Your CV content
+├── design.yaml    # Colors, fonts, margins, theme
+├── locale.yaml    # Language & date formatting
+└── settings.yaml  # App configuration
+```
+
+## ✨ Features
+
+- 📝 **YAML-based** - Easy to edit and version control
+- 🎨 **Customizable themes** - Multiple professional designs
+- 👀 **Live preview** - See changes as you type (`just watch`)
+- 📄 **Multi-format export** - PDF + Markdown
+- 🌍 **Localization** - Support for multiple languages
+- 🐳 **Dev Container** - Pre-configured environment with all extensions
+
+## 🔧 Dev Container Includes
+
+Python 3.13 • RenderCV • PDF Preview • Python Extension • YAML Support • Ruff Linter • Spell Checker • Error Lens
+
+## 📚 Configuration
+
+**resume.yaml** - Personal info, experience, education, skills, projects
+**design.yaml** - Theme, colors, typography, margins
+**locale.yaml** - Language, date format, translations
+**settings.yaml** - App settings
+
+👉 [Full RenderCV docs](https://sinaatalay.github.io/rendercv/)
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
-## 🛡️ License
+## 📄 License
 
-This project is licensed under the Apache 2.0 License. See [LICENSE](LICENSE) for details.
+Apache 2.0 - See [LICENSE](LICENSE)
