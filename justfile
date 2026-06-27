@@ -14,14 +14,14 @@ sync:
     @uv sync --no-cache
 
 watch:
-    @rendercv watch \
+    @uv run rendercv watch \
       --design {{design}} \
       --locale-catalog {{locale}} \
       --settings {{settings}} \
       {{resume}}
 
 build:
-    @rendercv render \
+    @uv run rendercv render \
       --design {{design}} \
       --locale-catalog {{locale}} \
       --settings {{settings}} \
