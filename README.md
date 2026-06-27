@@ -37,7 +37,7 @@ Output: **PDF** + **Markdown** files in current directory
 
 ## 📁 File Structure
 
-```
+```text
 src/
 ├── resume.yaml    # Your CV content
 ├── design.yaml    # Colors, fonts, margins, theme
