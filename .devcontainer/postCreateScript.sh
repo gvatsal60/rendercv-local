@@ -34,7 +34,8 @@ readonly SNIPPETS_DIR="snippets"
 readonly VSCODE_DIR=".vscode"
 readonly SNIPPET_FILES_PATTERN="*.code-snippets"
 
-readonly ALIAS_SRC_URL="https://raw.githubusercontent.com/gvatsal60/Linux-Aliases/HEAD/install.sh"
+readonly GITHUB_URL="https://raw.githubusercontent.com"
+readonly ALIAS_SRC_URL="${GITHUB_URL}/gvatsal60/Linux-Aliases/HEAD/install.sh"
 readonly UV_INSTALL_URL="https://astral.sh/uv/install.sh"
 
 ##########################################################################################
@@ -51,7 +52,7 @@ if command -v curl >/dev/null 2>&1; then
     curl -fsSL "${ALIAS_SRC_URL}" | sh
     curl -fsSL "${UV_INSTALL_URL}" | sh
     if command -v uv >/dev/null 2>&1; then
-      uv tool install rust-just
+        uv tool install rust-just
     fi
 else
     echo "Error: curl is not installed. Unable to use Linux aliases"
